@@ -22,7 +22,7 @@ class _OnboardingState extends State<Onboarding> {
             Text(
               "Track your parcel\n from anywhere",
               textAlign: TextAlign.center,
-              style: AppWidget.headlineTextStyle(),
+              style: AppWidget.headlineTextStyle(30),
             ),
             const SizedBox(height: 30),
             Text(

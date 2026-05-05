@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:package_delivery_solution/pages/home_page.dart';
 import 'package:package_delivery_solution/pages/onboarding.dart';
+import 'package:package_delivery_solution/pages/post_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const Onboarding(),
+      home: const PostPage(),
     );
   }
 }
