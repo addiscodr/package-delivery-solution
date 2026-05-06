@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "916549499487",
+    "project_id": "packagedeliverysolution",
+    "storage_bucket": "packagedeliverysolution.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916549499487:android:b37cc65cf916fdf18139ea",
+        "android_client_info": {
+          "package_name": "com.addiscodr.package_delivery_solution"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDahfcbUBgYgqSvQBrSA8SEAtQh4SfEQzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

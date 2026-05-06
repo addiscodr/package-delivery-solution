@@ -1,9 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:package_delivery_solution/pages/home_page.dart';
 import 'package:package_delivery_solution/pages/onboarding.dart';
 import 'package:package_delivery_solution/pages/post_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
