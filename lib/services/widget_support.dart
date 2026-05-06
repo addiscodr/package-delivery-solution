@@ -9,6 +9,14 @@ class AppWidget {
     );
   }
 
+  static TextStyle normalTextStyle(double textSize) {
+    return TextStyle(
+      color: Colors.black,
+      fontSize: textSize,
+      fontWeight: FontWeight.w500,
+    );
+  }
+
   static TextStyle simpleTextStyle() {
     return TextStyle(
       color: Colors.black38,
@@ -25,10 +33,10 @@ class AppWidget {
     );
   }
 
-  static TextStyle whiteTextStyle() {
+  static TextStyle whiteTextStyle(double textSize) {
     return TextStyle(
       color: Colors.white,
-      fontSize: 24,
+      fontSize: textSize,
       fontWeight: FontWeight.bold,
     );
   }

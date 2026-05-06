@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(height: 30),
                     Text(
                       "Track your shipment",
-                      style: AppWidget.whiteTextStyle(),
+                      style: AppWidget.whiteTextStyle(24),
                     ),
                     const SizedBox(height: 5),
                     // Text(

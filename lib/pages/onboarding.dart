@@ -42,7 +42,7 @@ class _OnboardingState extends State<Onboarding> {
                   borderRadius: BorderRadius.circular(45),
                 ),
                 child: Center(
-                  child: Text("Track Now", style: AppWidget.whiteTextStyle()),
+                  child: Text("Track Now", style: AppWidget.whiteTextStyle(24)),
                 ),
               ),
             ),
