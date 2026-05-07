@@ -27,6 +27,7 @@ class _BottomNavState extends State<BottomNav> {
     homePage = HomePage();
     orderPage = OrderPage();
     postPage = PostPage();
+    profilePage = ProfilePage();
 
     pages = [homePage, postPage, orderPage, profilePage];
 

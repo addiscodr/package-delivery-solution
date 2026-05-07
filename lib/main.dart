@@ -1,8 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:package_delivery_solution/pages/home_page.dart';
+import 'package:package_delivery_solution/pages/login_page.dart';
 import 'package:package_delivery_solution/pages/onboarding.dart';
 import 'package:package_delivery_solution/pages/post_page.dart';
+import 'package:package_delivery_solution/pages/sign_up.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +22,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const HomePage(),
+      home: const SignupPage(),
     );
   }
 }
+
+// continue from 1:57:00

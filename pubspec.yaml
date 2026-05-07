@@ -39,6 +39,7 @@ dependencies:
   cloud_firestore: 
   firebase_core: 
   random_string: 
+  shared_preferences: ^2.5.5
 
 dev_dependencies:
   flutter_test:
