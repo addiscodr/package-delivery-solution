@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const SignupPage(),
+      home: const PostPage(),
     );
   }
 }
 
-// continue from 1:57:00
+// continue from 2:24:00

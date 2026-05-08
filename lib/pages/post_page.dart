@@ -9,6 +9,18 @@ class PostPage extends StatefulWidget {
 }
 
 class _PostPageState extends State<PostPage> {
+  final TextEditingController pickUpAddressController = TextEditingController();
+  final TextEditingController pickUpUsernameController =
+      TextEditingController();
+  final TextEditingController pickUpPhoneNumberController =
+      TextEditingController();
+  final TextEditingController dropOffAddressController =
+      TextEditingController();
+  final TextEditingController dropOffUsernameController =
+      TextEditingController();
+  final TextEditingController dropOffPhoneNumberController =
+      TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +32,7 @@ class _PostPageState extends State<PostPage> {
             Center(
               child: Text("Add Package", style: AppWidget.whiteTextStyle(24)),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
             Expanded(
               child: Container(
                 padding: EdgeInsets.only(left: 20),
@@ -44,62 +56,7 @@ class _PostPageState extends State<PostPage> {
                           fit: BoxFit.cover,
                         ),
                       ),
-                      const SizedBox(height: 50),
-                      Text(
-                        "Add Location",
-                        style: AppWidget.headlineTextStyle(23),
-                      ),
-                      const SizedBox(height: 10),
 
-                      const SizedBox(height: 5),
-                      Container(
-                        padding: EdgeInsets.only(left: 15),
-                        margin: EdgeInsets.only(right: 20),
-                        decoration: BoxDecoration(
-                          color: Color(0xffececf8),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: "Enter pick up location",
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-
-                      const SizedBox(height: 5),
-                      Container(
-                        padding: EdgeInsets.only(left: 15),
-                        margin: EdgeInsets.only(right: 20),
-                        decoration: BoxDecoration(
-                          color: Color(0xffececf8),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: "Enter drop-off location",
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 40),
-                      Center(
-                        child: Container(
-                          height: 60,
-                          width: MediaQuery.of(context).size.width / 1.5,
-                          decoration: BoxDecoration(
-                            color: Color(0xff6053f8),
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Submit Location",
-                              style: AppWidget.whiteTextStyle(21),
-                            ),
-                          ),
-                        ),
-                      ),
                       const SizedBox(height: 40),
                       Container(
                         margin: EdgeInsets.only(right: 20),
@@ -126,6 +83,7 @@ class _PostPageState extends State<PostPage> {
                                 const SizedBox(width: 10),
                                 Expanded(
                                   child: TextField(
+                                    controller: pickUpAddressController,
                                     decoration: InputDecoration(
                                       hintText: "Enter Pick-up Address",
                                       enabledBorder: UnderlineInputBorder(
@@ -149,6 +107,7 @@ class _PostPageState extends State<PostPage> {
                                 const SizedBox(width: 10),
                                 Expanded(
                                   child: TextField(
+                                    controller: pickUpUsernameController,
                                     decoration: InputDecoration(
                                       hintText: "Enter Username",
                                       enabledBorder: UnderlineInputBorder(
@@ -172,6 +131,7 @@ class _PostPageState extends State<PostPage> {
                                 const SizedBox(width: 10),
                                 Expanded(
                                   child: TextField(
+                                    controller: pickUpPhoneNumberController,
                                     decoration: InputDecoration(
                                       hintText: "Enter Phone Number",
                                       enabledBorder: UnderlineInputBorder(
@@ -213,6 +173,7 @@ class _PostPageState extends State<PostPage> {
                                 const SizedBox(width: 10),
                                 Expanded(
                                   child: TextField(
+                                    controller: dropOffAddressController,
                                     decoration: InputDecoration(
                                       hintText: "Enter Drop-off Address",
                                       enabledBorder: UnderlineInputBorder(
@@ -236,6 +197,7 @@ class _PostPageState extends State<PostPage> {
                                 const SizedBox(width: 10),
                                 Expanded(
                                   child: TextField(
+                                    controller: dropOffUsernameController,
                                     decoration: InputDecoration(
                                       hintText: "Enter Username",
                                       enabledBorder: UnderlineInputBorder(
@@ -259,6 +221,7 @@ class _PostPageState extends State<PostPage> {
                                 const SizedBox(width: 10),
                                 Expanded(
                                   child: TextField(
+                                    controller: dropOffPhoneNumberController,
                                     decoration: InputDecoration(
                                       hintText: "Enter Phone Number",
                                       enabledBorder: UnderlineInputBorder(
@@ -300,7 +263,7 @@ class _PostPageState extends State<PostPage> {
                             const SizedBox(width: 40),
                             Container(
                               width: 200,
-                              height: 60,
+                              height: 55,
                               decoration: BoxDecoration(
                                 color: Color(0xff6053f8),
                                 borderRadius: BorderRadius.circular(30),
